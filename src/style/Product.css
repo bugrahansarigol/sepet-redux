@@ -1,0 +1,55 @@
+.card {
+  width: 300px;
+  height: 450px;
+  padding: 10px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card img {
+  width: 150px;
+  height: 150px;
+}
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border:1px solid #000;
+  border-radius: 5px;
+}
+.action .btn {
+  width: 90px;
+  height: 30px;
+  border: 0;
+}
+.action .buy {
+  background-color: #70a1ff;
+  color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.action .sell {
+  background-color: #ff4757;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.price {
+  margin:0 10px ;
+  opacity: 0.7;
+  font-size: 14px;
+}
+.description {
+  width: 100%;
+  max-height: 87px;
+  overflow: hidden;
+  opacity: 0.3;
+  font-weight: 400;
+  font-size: 12px;
+}

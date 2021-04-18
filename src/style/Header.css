@@ -1,0 +1,11 @@
+.header {
+  width: 1000px;
+  height: 100px;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header .title {
+  font-weight: bold;
+}
