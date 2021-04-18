@@ -7,7 +7,7 @@ const CartReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ADD_CART_SUCCESS: {
       let addedItem = state.cart.find((e) => {
-        return e.id == action.payload.id;
+        return e.id === action.payload.id;
       });
       if (addedItem) {
         addedItem.quantity += 1;
@@ -21,10 +21,10 @@ const CartReducer = (state = INITIAL_STATE, action) => {
     }
     case REMOVE_CART_SUCCESS: {
       let removedItem = state.cart.find((e) => {
-        return e.id == action.payload.id;
+        return e.id === action.payload.id;
       });
       if (removedItem) {
-        if (removedItem.quantity == 1) {
+        if (removedItem.quantity === 1) {
           state.cart.splice(state.cart.indexOf(removedItem), 1);
           state.totalPrice -= removedItem.price;
           return { ...state };
@@ -34,9 +34,9 @@ const CartReducer = (state = INITIAL_STATE, action) => {
           return { ...state };
         }
       }
-    }
+    };
     default:
-      return state;
+      return state
   }
 };
 export default CartReducer;

@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getProducts } from "../Redux/Actions/AProducts";
-import { AddToCart } from "../Redux/Actions/ACart";
 import "../style/Products.css";
 import Product from "./Product";
 const Products = () => {

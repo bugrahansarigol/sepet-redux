@@ -1,6 +1,5 @@
 import "./style/App.css";
 import Products from "./Components/Products";
-import Cart from "./Components/Cart";
 import Header from "./Components/Header";
 const App = () => {
   return (
